@@ -1,0 +1,397 @@
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  background-color: darkgrey;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100%;
+  background-color: darkgrey;
+  /* background-image: url("../Images/R.jpg"); */
+  /* You can adjust 'cover' to other values like 'contain' or specify width and height values */
+  background-repeat: no-repeat;
+  /* Prevent the background image from repeating */
+  background-position: center;
+  /* Center the background image */
+
+
+}
+
+.register-form {
+  border: 5px solid rgb(5, 5, 5);
+  padding: 30px;
+  border-radius: 20px;
+  background-color: rgb(74, 72, 72);
+  color: aqua;
+  margin-right: 25%;
+}
+
+.loginhead {
+  color: antiquewhite;
+}
+
+.gpt3__header-image {
+  flex: 1 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gpt3__header-image img {
+  width: 60%;
+  height: 60%;
+}
+
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+
+}
+
+.col-4 {
+
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform .5s;
+
+}
+
+.col-4 img {
+
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #3bff58;
+  border: 5px solid rgb(5, 5, 5);
+
+
+}
+
+.title::after {
+  content: "";
+  background: #3bff58;
+  width: 40%;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+
+
+}
+
+h4 {
+
+  color: #555;
+  font-weight: normal;
+}
+
+.col-4 p {
+
+  font-size: 14
+}
+
+.col-4:hover {
+
+  transform: translateY(-10px);
+}
+
+.row {
+
+  row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+}
+
+.articles {
+  background: var(--veryLightGray);
+  padding: 5% 10%;
+}
+
+
+
+.articles h1 {
+  color: var(--darkBlue);
+  font-weight: 300;
+}
+
+.articlesList {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-flow: row nowrap;
+  padding: 30px 0;
+}
+
+.latestArticles {
+  width: 24%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px 10px 0 0;
+  background: var(--white);
+  overflow: hidden;
+}
+
+.latestArticles:hover {
+
+  transform: translateY(-10px);
+}
+
+.latestArticles img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.latestArticles div {
+  padding: 20px 25px;
+}
+
+.latestArticles div a {
+  color: var(--darkBlue);
+  font-weight: lighter;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.latestArticles div a:hover {
+  color: var(--limeGreen);
+}
+
+.authorMuted {
+  color: var(--grayishBlue);
+  font-size: 10px;
+}
+
+.latestArticles .text-muted {
+  line-height: 20px;
+  font-size: 13px;
+  text-align: justify;
+}
+
+.nav {
+  background-color: #333;
+  /* Set your preferred background color */
+  padding: 10px;
+  /* Adjust padding as needed */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  /* Set your preferred text color */
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffd700;
+  /* Set your preferred hover color */
+}
+
+/* Navbar.css */
+
+.nav {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* Align logo and nav links at the ends */
+  align-items: center;
+  /* Center vertically */
+}
+
+.logo img {
+  max-height: 50px;
+  /* Adjust the maximum height of the logo */
+}
+
+nav {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffd700;
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    /* Stack items vertically on smaller screens */
+    align-items: flex-start;
+    /* Align items to the left on smaller screens */
+  }
+
+  ul {
+    margin-top: 10px;
+    /* Add margin to the top of the stacked links */
+  }
+}
+
+.footer {
+  padding: 5% 10%;
+  background: linear-gradient(45deg, black, #aba6f0);
+
+}
+
+.footerList {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  align-content: space-between;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footerDiv {
+  align-self: stretch;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footerDiv a {
+  color: white;
+  text-decoration: none;
+  font-weight: strong;
+  font-size: 16px;
+}
+
+.footerDiv a:hover {
+  color: var(--limeGreen);
+}
+
+#link:hover {
+  fill: var(--limeGreen);
+}
+
+.footerDiv:last-child {
+  align-items: flex-end;
+  width: 40%;
+}
+
+.footerDiv:last-child p {
+  margin: 15px 0 0 0;
+  font-size: 14px;
+  color: var(--grayishBlue);
+}
+
+.footerDiv:last-child a {
+  display: inline-block;
+}
+
+.footerDiv svg:first-child {
+  margin: 0 10px 0px 10px;
+}
+
+.socialLinks {
+  margin-top: 40px;
+}
+
+.footerDiv #requestBtn {
+  opacity: 1;
+  color: black;
+  border: 6px solid black;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+
+.footerDiv #requestBtn:hover {
+  background: var(--limeGreen);
+  background: -webkit-linear-gradient(left, var(--limeGreen), var(--brightCyan));
+  background: -o-linear-gradient(right, var(--limeGreen), var(--brightCyan));
+  background: -moz-linear-gradient(right, var(--limeGreen), var(--brightCyan));
+  background: linear-gradient(to right, var(--limeGreen), var(--brightCyan));
+  opacity: 1;
+}
+
+#logoFill {
+  fill: white;
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+  color: var(--darkBlue);
+}
+
+.attribution a {
+  color: var(--limeGreen);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}

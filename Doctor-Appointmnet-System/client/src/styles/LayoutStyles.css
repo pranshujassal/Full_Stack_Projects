@@ -1,0 +1,549 @@
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(51, 1, 1);
+  box-shadow: 0 0 2px gray;
+  padding: 10px;
+  color: white;
+  z-index: 1000;
+  margin-bottom: 10px;
+}
+
+.logo h6 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  margin-left: 40px;
+}
+
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.menu-item a:hover {
+  color: #8b4539;
+  background-color: white;
+}
+
+.menu-item.active {
+  color: black;
+  background-color: #884949;
+}
+
+/* Highlight the active tab
+.menu-item a.active {
+  background-color: #eee;
+  color: rgb(51, 1, 1);
+} */
+
+.header-content {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.header-content i {
+  color: aliceblue;
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+
+.header-content a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+.body {
+  height: calc(100vh - 30px);
+  margin: 20px;
+  box-shadow: 0 0 2px gray;
+  background-color: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.drcard {
+  border-radius: 10%;
+  padding: 3px;
+  justify-content: space-evenly;
+  border: 5px solid black;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  animation: scaleIn 0.5s ease-in-out;
+}
+
+
+.drcard:hover {
+  transform: translateY(-10px);
+  border: 6px solid rgb(0, 166, 255);
+
+}
+
+.drcard img {
+  border-radius: 10%;
+  height: 60%;
+
+}
+
+.card-header {
+  border: 3px solid rgb(251, 251, 251);
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+}
+
+.card-body {
+  background-color: rgb(187, 244, 17);
+  border-radius: 12%;
+
+}
+
+.bookingcontainer {
+  padding: 30px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  margin-top: 90px;
+}
+
+/* .drbooking {
+  border: 5px dashed grey;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bookingimage {
+  width: 700px;
+}
+
+.bookingimage img {
+  width: 105%;
+  height: 60%;
+} */
+
+/* Add this CSS to your styles.css or a separate stylesheet */
+
+/* Add this CSS to your styles.css or a separate stylesheet */
+
+/* Booking Image */
+.bookingimage {
+  max-width: 400px;
+  margin-right: 20px;
+  overflow: hidden;
+  /* Hide overflow for rounded corners */
+  border-radius: 15px;
+  /* Add a curved border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add a subtle shadow */
+  background: linear-gradient(45deg, #3498db, #2c3e50);
+  /* Gradient background */
+}
+
+.bookingimage img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  /* Maintain curved border for the image */
+  transition: transform 0.3s ease-in-out;
+  /* Add transition for hover effect */
+}
+
+.bookingimage:hover img {
+  transform: scale(1.1);
+  /* Scale up the image on hover */
+}
+
+/* Doctor Booking Container */
+.drbooking {
+  border: 5px solid #3498db;
+  /* Change border color as needed */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  /* Add transition for hover effect */
+  background: linear-gradient(45deg, #1e1e1e, #2c3e50);
+  /* Dark gradient background */
+  padding: 20px;
+  color: #fff;
+  /* Text color */
+}
+
+.drbooking:hover {
+  transform: scale(1.05);
+  /* Scale up on hover */
+}
+
+/* Doctor Details Section */
+.doctor-details-section {
+  background: linear-gradient(45deg, #1e1e1e, #16a085);
+  /* Dark gradient background */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  /* Align text in the center */
+  color: #fff;
+  /* Text color */
+}
+
+/* Doctor Details */
+.hh3,
+.hh4,
+.hh5 {
+  color: #fff;
+  margin: 0;
+  /* Reset margins */
+}
+
+/* Doctor Name */
+.hh4 {
+  font-size: 2rem;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Other Details */
+.hh5 {
+  margin-top: 20px;
+  color: #fff;
+}
+
+/* Date and Time Picker Container */
+.hh5 .d-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
+/* Heading "Booking Page" */
+.drbooking h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: bold;
+  /* Make the heading bold */
+  position: relative;
+}
+
+/* Animation for moving lines below heading */
+.drbooking h3::before,
+.drbooking h3::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #3498db;
+  /* Line color */
+  bottom: -5px;
+  transition: transform 0.3s ease-in-out;
+  /* Add transition for the lines */
+}
+
+.drbooking h3::before {
+  left: 0;
+}
+
+.drbooking h3::after {
+  right: 0;
+}
+
+.drbooking h3:hover::before {
+  transform: scaleX(1.5);
+  /* Expand the left line on hover */
+}
+
+.drbooking h3:hover::after {
+  transform: scaleX(1.5);
+  /* Expand the right line on hover */
+}
+
+/* Buttons */
+.btn-primary,
+.btn-dark {
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
+  /* Add transition for button hover */
+}
+
+/* Button Styles */
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  /* Change color as needed */
+  color: #fff;
+}
+
+.btn-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+  background-color: #2980b9;
+  /* Change color as needed */
+}
+
+/* Add this CSS to your styles.css or a separate stylesheet */
+
+/* Apply Doctor Form Container */
+/* Add this CSS to your styles.css or a separate stylesheet */
+
+/* Apply Doctor Form Container */
+.text-center {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  /* Header color */
+}
+
+.m-3 {
+  padding: 20px;
+  background: #2c3e50;
+  /* Fallback color */
+  background: linear-gradient(135deg, #e45a5a, #fff946);
+  /* Gradient background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  /* Text color */
+}
+
+/* Personal Details Section */
+.hhh4 {
+  font-size: 1.9rem;
+  margin-bottom: 15px;
+  color: #0c0c0c;
+  /* Section header color */
+}
+
+/* Input Styles */
+.ant-form-item {
+  margin-bottom: 15px;
+}
+
+/* Radio Group Styles */
+.ant-radio-group {
+  display: flex;
+}
+
+/* Professional Details Section */
+h4:last-child {
+  margin-top: 30px;
+}
+
+/* Button Style */
+.form-btn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  /* Primary button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
+  /* Add transition for button hover */
+}
+
+.form-btn:hover {
+  background-color: #2980b9;
+  /* Darker button color on hover */
+}
+
+.ant-row {
+  margin-bottom: 15px;
+  /* Example margin, adjust as needed */
+  padding: 10px;
+  /* Example background color */
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: medium;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .ant-form-item {
+    width: 100%;
+  }
+
+  .ant-row {
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+}
+
+/* Add this CSS to your styles.css or a separate stylesheet */
+
+/* Notification Page Heading */
+.notification-heading {
+  padding: 1rem;
+  text-align: center;
+  background-color: #3498db;
+  /* Header background color */
+  color: #fff;
+  /* Header text color */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Tabs Container */
+.ant-tabs {
+  margin: 1rem 0;
+}
+
+/* Tab Styles */
+.ant-tabs-tab {
+  padding: 1.5rem 2.5rem;
+  /* Increased padding for the tabs */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  background-color: #000000;
+  /* Updated background color for both tabs */
+  color: #fff;
+  /* Initial text color for both tabs */
+  border-radius: 15px;
+  /* Rounded corners */
+  margin-right: 15px;
+  /* Adjusted margin between tabs */
+  font-size: 1.2rem;
+  /* Increased font size */
+}
+
+/* Unread Tab Hover Style
+.ant-tabs-tab:first-child:hover {
+  background: linear-gradient(135deg, #4dff47, #b4ec89);
+  /* Gradient background on hover */
+
+/* 
+Read Tab Hover Style */
+/* .ant-tabs-tab:last-child:hover {
+  background: linear-gradient(135deg, #4dff47, #b4ec89);
+
+  */
+
+/* Mark All Read / Delete All Read Button */
+.action-button {
+  padding: 0.7rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.action-button:hover {
+  background-color: #2980b9;
+  /* Darker button color on hover */
+}
+
+/* Notification Cards */
+.cardnot {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #ebaa98;
+  /* Card background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.cardnot:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #ffffff;
+  /* Text color inside the card */
+}
+
+/* Notification Hover Style */
+.cardnot:hover .card-text {
+  color: #060606;
+  /* Text color on hover */
+}
+
+.p-2 {
+
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(194, 17, 17, 0.1);
+  border-radius: 10px;
+  color: white;
+
+}
+
+.p-2:hover {
+
+  background-color: rgb(0, 255, 26);
+  box-shadow: 0 4px 8px rgba(194, 17, 17, 0.1);
+  border-radius: 10px;
+  color: white;
+
+}
+
+.p-3 {
+  margin-top: 25px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
